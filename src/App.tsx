@@ -7,7 +7,18 @@ import {
 } from 'lucide-react'
 import './App.css'
 
-type Screen = 'home' | 'missions' | 'memory' | 'codebreaker' | 'logic' | 'showdown' | 'result'
+type Screen = 'home' | 'missions' | 'memory' | 'codebreaker' | 'logic' | 'showdown' | 'ai-lab' | 'result'
+
+type AiCategory = 'logic' | 'cipher' | 'riddle' | 'mixed'
+type AiDifficulty = 'easy' | 'medium' | 'hard'
+interface AiPuzzle {
+  title: string
+  question: string
+  options: string[]
+  correctAnswer: number
+  hint: string
+  explanation: string
+}
 type Phase = 'preview' | 'playing' | 'won' | 'failed'
 
 const tiles = ['A1', 'B2', 'C3', 'D4', 'E5', 'F6']
@@ -116,6 +127,14 @@ function createSequence(length: number): number[] {
 
 function App() {
   const [screen, setScreen] = useState<Screen>('home')
+  const [aiCategory, setAiCategory] = useState<AiCategory>('mixed')
+  const [aiDifficulty, setAiDifficulty] = useState<AiDifficulty>('medium')
+  const [aiPuzzle, setAiPuzzle] = useState<AiPuzzle | null>(null)
+  const [aiLoading, setAiLoading] = useState(false)
+  const [aiAnswer, setAiAnswer] = useState<number | null>(null)
+  const [aiAnswered, setAiAnswered] = useState(false)
+  const [aiHintVisible, setAiHintVisible] = useState(false)
+  const [aiError, setAiError] = useState('')
   const [phase, setPhase] = useState<Phase>('preview')
   const [sequence, setSequence] = useState<number[]>([])
   const [selected, setSelected] = useState<number[]>([])
@@ -482,6 +501,32 @@ function App() {
     setBossMessage(`N.E.U.R.O. HINT: ${bossChallenges[bossStage].hint} Your reward is reduced by 50 XP.`)
   }
 
+  async function generateAiPuzzle() {
+    setAiLoading(true)
+    setAiError('')
+    setAiPuzzle(null)
+    setAiAnswer(null)
+    setAiAnswered(false)
+    setAiHintVisible(false)
+
+    try {
+      const response = await fetch('/api/generate-puzzle', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ category: aiCategory, difficulty: aiDifficulty }),
+      })
+      const data: { puzzle?: AiPuzzle; error?: string } = await response.json()
+      if (!response.ok || !data.puzzle) {
+        throw new Error(data.error || 'Puzzle generation failed. Please try again.')
+      }
+      setAiPuzzle(data.puzzle)
+    } catch (error) {
+      setAiError(error instanceof Error ? error.message : 'Unable to generate a puzzle.')
+    } finally {
+      setAiLoading(false)
+    }
+  }
+
   function startGame() {
     setScreen('missions')
   }
@@ -590,6 +635,89 @@ function App() {
           </motion.section>
         )}
 
+        {screen === 'ai-lab' && (
+          <motion.section key="ai-lab" className="content-screen puzzle-screen" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }}>
+            <div className="eyebrow"><span /> GENERATIVE INTELLIGENCE // GEMINI</div>
+            <h2>AI PUZZLE <span>LAB.</span></h2>
+            <p className="section-description">Configure your challenge. N.E.U.R.O. will generate a new puzzle for you.</p>
+
+            <div className="puzzle-panel ai-lab-panel">
+              <div className="panel-top">
+                <span><Sparkles size={15} /> GEMINI PUZZLE GENERATOR</span>
+                <span>AI ONLINE</span>
+              </div>
+
+              <div className="ai-controls">
+                <label>
+                  <span>CATEGORY</span>
+                  <select value={aiCategory} onChange={(event) => setAiCategory(event.target.value as AiCategory)}>
+                    <option value="mixed">Mixed Challenges</option>
+                    <option value="logic">Logic</option>
+                    <option value="cipher">Cipher</option>
+                    <option value="riddle">Riddle</option>
+                  </select>
+                </label>
+                <label>
+                  <span>DIFFICULTY</span>
+                  <select value={aiDifficulty} onChange={(event) => setAiDifficulty(event.target.value as AiDifficulty)}>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+                </label>
+              </div>
+
+              <button className="primary-button ai-generate-button" onClick={generateAiPuzzle} disabled={aiLoading}>
+                <Sparkles size={17} /> {aiLoading ? 'GENERATING...' : 'GENERATE AI PUZZLE'} <ChevronRight size={18} />
+              </button>
+
+              {aiLoading && <p className="puzzle-message"><Sparkles size={15} /> Gemini is creating your challenge...</p>}
+              {aiError && <p className="ai-error">{aiError}</p>}
+
+              {aiPuzzle && (
+                <div className="ai-puzzle-result">
+                  <div className="ai-puzzle-meta">{aiCategory.toUpperCase()} // {aiDifficulty.toUpperCase()}</div>
+                  <h3>{aiPuzzle.title}</h3>
+                  <p className="ai-question">{aiPuzzle.question}</p>
+
+                  <div className="ai-options">
+                    {aiPuzzle.options.map((option, index) => (
+                      <button
+                        key={`${index}-${option}`}
+                        className={`ai-option ${aiAnswered && index === aiPuzzle.correctAnswer ? 'ai-correct' : ''} ${aiAnswered && aiAnswer === index && index !== aiPuzzle.correctAnswer ? 'ai-incorrect' : ''}`}
+                        onClick={() => {
+                          if (!aiAnswered) {
+                            setAiAnswer(index)
+                            setAiAnswered(true)
+                          }
+                        }}
+                        disabled={aiAnswered}
+                      >
+                        <span>{String.fromCharCode(65 + index)}</span>{option}
+                      </button>
+                    ))}
+                  </div>
+
+                  {!aiAnswered && (
+                    <button className="hint-button" onClick={() => setAiHintVisible(true)}>
+                      <Lightbulb size={15} /> {aiHintVisible ? 'HINT SHOWN' : 'REVEAL HINT'}
+                    </button>
+                  )}
+
+                  {aiHintVisible && !aiAnswered && <p className="ai-hint"><Lightbulb size={15} /> {aiPuzzle.hint}</p>}
+
+                  {aiAnswered && (
+                    <div className="ai-feedback">
+                      <h3>{aiAnswer === aiPuzzle.correctAnswer ? 'CORRECT ANSWER!' : 'NOT QUITE. TRY ANOTHER PUZZLE.'}</h3>
+                      <p>{aiPuzzle.explanation}</p>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+            <button className="back-button" onClick={() => setScreen('missions')}>? BACK TO MISSION CONTROL</button>
+          </motion.section>
+        )}
         {screen === 'memory' && (
           <motion.section key="memory" className="content-screen puzzle-screen" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }}>
             <div className="eyebrow"><span /> MISSION 01 // MEMORY MATRIX</div>

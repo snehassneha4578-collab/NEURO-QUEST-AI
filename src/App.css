@@ -575,3 +575,76 @@ button.mission-card:hover { border-color: #8a9dff; transform: translateY(-5px); 
     font-size: 8px;
   }
 }
+
+/* GEMINI AI PUZZLE LAB */
+.ai-lab-card {
+  border-color: #8b5cf655;
+  background: linear-gradient(145deg, #251b43cc, #10172ad9);
+}
+.ai-lab-panel { max-width: 760px; }
+.ai-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin: 28px 0 20px;
+}
+.ai-controls label { display: flex; flex-direction: column; gap: 9px; }
+.ai-controls label span, .ai-puzzle-meta {
+  color: #9ca9d0;
+  font: 9px Orbitron, sans-serif;
+  letter-spacing: 1px;
+}
+.ai-controls select {
+  width: 100%;
+  padding: 13px;
+  color: #dce5ff;
+  background: #151d35;
+  border: 1px solid #7588ce66;
+  border-radius: 4px;
+}
+.ai-generate-button { width: 100%; justify-content: center; }
+.ai-puzzle-result {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #7588ce44;
+}
+.ai-puzzle-result h3 {
+  margin: 14px 0;
+  color: #e0e7ff;
+  font: 16px Orbitron, sans-serif;
+}
+.ai-question { color: #bdc9e8; line-height: 1.7; }
+.ai-options { display: grid; gap: 10px; margin: 22px 0; }
+.ai-option {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px;
+  text-align: left;
+  color: #c5d2f3;
+  background: #18213a;
+  border: 1px solid #7588ce55;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ai-option span {
+  color: #9bafff;
+  font: 11px Orbitron, sans-serif;
+}
+.ai-option:disabled { cursor: default; opacity: 1; }
+.ai-option.ai-correct { border-color: #34d399; background: #12352e; }
+.ai-option.ai-incorrect { border-color: #fb7185; background: #3b1b2a; }
+.ai-hint, .ai-feedback {
+  margin-top: 18px;
+  padding: 15px;
+  color: #b8c8f0;
+  background: #20264a;
+  border-left: 3px solid #a78bfa;
+  line-height: 1.6;
+}
+.ai-feedback h3 { color: #a5b4fc; }
+.ai-error { margin-top: 18px; color: #fda4af; }
+@media (max-width: 560px) {
+  .ai-controls { grid-template-columns: 1fr; }
+  .ai-lab-panel { padding: 16px; }
+}
