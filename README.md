@@ -1,151 +1,111 @@
-# 🧠 NEURO-QUEST-AI — THE INTELLIGENCE ESCAPE
+# 🧠 NEURO-QUEST-AI
+## THE INTELLIGENCE ESCAPE
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:141E30,50:243B55,100:00C9FF&text=NEURO-QUEST-AI&fontSize=48&fontColor=FFFFFF&fontAlignY=38&desc=THE%20INTELLIGENCE%20ESCAPE&descAlignY=58&animation=fadeIn" width="100%" alt="NEURO-QUEST-AI animated header" />
+  <strong>Think Smart. Solve Fast. Challenge Your Intelligence.</strong>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=2500&pause=900&color=00C9FF&center=true&vCenter=true&width=700&lines=Think.+Solve.+Escape.;Challenge+Your+Intelligence.;Explore+AI-Powered+Puzzle+Generation.;Five+Challenges.+One+Intelligence+Quest." alt="Animated typing introduction" />
-</p>
-
-<!-- CLICKABLE PROJECT BUTTONS -->
-<p align="center">
-  <a href="https://neuro-quest-ai.vercel.app/">
-    <img src="https://img.shields.io/badge/PLAY_LIVE-OPEN_GAME-00C9FF?style=for-the-badge" alt="PLAY LIVE - OPEN GAME" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/snehassneha4578-collab/NEURO-QUEST-AI">
-    <img src="https://img.shields.io/badge/GITHUB-VIEW_SOURCE_CODE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub - View Source Code" />
-  </a>
-</p>
-
-<!-- TECHNOLOGY BADGES -->
-<p align="center">
-  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React 19" />
-  <img src="https://img.shields.io/badge/TypeScript-7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript 7" />
-  <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 8" />
-  <img src="https://img.shields.io/badge/Gemini_AI-3.1_Flash--Lite-4285F4?style=flat-square" alt="Gemini AI" />
-  <img src="https://img.shields.io/badge/Vercel-Deployed-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+  <a href="https://neuro-quest-ai.vercel.app/">🚀 PLAY LIVE GAME</a>
+  &nbsp; | &nbsp;
+  <a href="https://github.com/snehassneha4578-collab/NEURO-QUEST-AI">⭐ VIEW GITHUB REPOSITORY</a>
 </p>
 
 ---
 
-## 🌌 EXPERIENCE THE INTELLIGENCE ESCAPE
+## 🌌 ABOUT THE PROJECT
 
-**NEURO-QUEST-AI** is an interactive puzzle and brain-challenge platform designed to test memory, logical reasoning, problem-solving, and strategic thinking.
+**NEURO-QUEST-AI — The Intelligence Escape** is an interactive puzzle and brain-challenge platform designed to test memory, logical reasoning, analytical thinking, and problem-solving abilities.
 
-Explore different missions, solve challenges, track your progress, and generate new puzzles using Google's Gemini AI.
+The application combines interactive missions, engaging visual effects, and Google's Gemini AI to create an intelligence-based gaming experience.
 
-The platform combines an engaging interface, interactive gameplay, animations, and AI-powered puzzle generation to create an immersive intelligence challenge.
+Users can explore different challenges, solve puzzles, and generate new puzzles dynamically using the AI Puzzle Lab.
 
-<p align="center">
-  <img src="docs/images/neuro-quest-hero.png" alt="NEURO-QUEST-AI hero screen" width="100%" />
-</p>
-
-<p align="center">
-  <b>🧩 Think Smart • ⚡ Solve Fast • 🤖 Explore AI</b>
-</p>
+![NEURO-QUEST-AI Hero](docs/images/neuro-quest-hero.png)
 
 ---
 
-## 🎮 PLAY THE GAME
+## 🎮 LIVE APPLICATION
 
-<p align="center">
-  <a href="https://neuro-quest-ai.vercel.app/">
-    <img src="https://img.shields.io/badge/ENTER_THE_GAME-CLICK_HERE-00C9FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Enter the game" />
-  </a>
-</p>
+**Play here:** https://neuro-quest-ai.vercel.app/
 
-**Live application:** https://neuro-quest-ai.vercel.app/
+**GitHub repository:** https://github.com/snehassneha4578-collab/NEURO-QUEST-AI
 
 ---
 
 ## 🕹️ MISSION CONTROL
 
-The Mission Control dashboard is the central hub for exploring the available challenges and navigating the intelligence escape experience.
+Mission Control is the main dashboard for navigating the intelligence challenges.
 
-<p align="center">
-  <img src="docs/images/mission-control.png" alt="NEURO-QUEST-AI Mission Control dashboard" width="100%" />
-</p>
-
-### Core experience
-
+Features include:
 - Interactive mission selection.
-- Multiple puzzle categories.
-- Animated interface elements and transitions.
+- Multiple puzzle experiences.
 - Challenge-based gameplay.
-- Progress and score feedback.
-- Responsive application layout.
+- Score and progress feedback.
+- Animated interface transitions.
+- Responsive user interface.
+
+![Mission Control](docs/images/mission-control.png)
 
 ---
 
 ## 🧠 THE FIVE CHALLENGES
 
-The platform offers four core missions and an additional Gemini-powered AI Puzzle Lab.
-
-### 01 — MEMORY MATRIX
+### 01. MEMORY MATRIX
 
 Test your memory and concentration by observing patterns and recalling information.
 
-**Challenge focus:**
+**Challenge areas:**
 - Visual memory.
 - Pattern recognition.
 - Concentration.
 - Recall accuracy.
 
-<p align="center">
-  <img src="docs/images/memory-matrix.png" alt="Memory Matrix gameplay" width="100%" />
-</p>
+![Memory Matrix](docs/images/memory-matrix.png)
 
-### 02 — CODE BREAKER
+### 02. CODE BREAKER
 
-Enter a code-solving challenge that tests logical deduction and analytical thinking.
+Solve code-based challenges using logical deduction and analytical thinking.
 
-**Challenge focus:**
+**Challenge areas:**
 - Logical reasoning.
 - Pattern analysis.
 - Code interpretation.
 - Problem-solving.
 
-<p align="center">
-  <img src="docs/images/codebreaker-logic-core.png" alt="Code Breaker challenge interface" width="100%" />
-</p>
+![Code Breaker](docs/images/codebreaker-logic-core.png)
 
-### 03 — LOGIC CORE
+### 03. LOGIC CORE
 
-Challenge your ability to understand logical relationships and solve reasoning-based problems.
+Explore reasoning-based challenges involving logical relationships and problem-solving.
 
-**Challenge focus:**
+**Challenge areas:**
 - Boolean logic.
 - Logical operators.
 - Analytical reasoning.
 - Decision-making.
 
-<p align="center">
-  <img src="docs/images/codebreaker-logic-core.png" alt="Logic Core challenge interface" width="100%" />
-</p>
+![Logic Core](docs/images/codebreaker-logic-core.png)
 
-### 04 — AI SHOWDOWN
+### 04. AI SHOWDOWN
 
-Explore strategic challenges designed to test your decisions and problem-solving abilities.
+Take on strategic challenges designed to test your reasoning and decision-making abilities.
 
-**Challenge focus:**
+**Challenge areas:**
 - Strategic thinking.
 - Decision-making.
 - Reasoning.
-- Challenge-based interaction.
+- Problem-solving.
 
-<p align="center">
-  <img src="docs/images/ai-showdown.png" alt="AI Showdown interface" width="100%" />
-</p>
+![AI Showdown](docs/images/ai-showdown.png)
 
-### 05 — GEMINI AI PUZZLE LAB
+### 05. GEMINI AI PUZZLE LAB
 
-The AI Puzzle Lab integrates Google's Gemini API to generate new puzzles dynamically.
+The AI Puzzle Lab uses Google's Gemini API to dynamically generate puzzles.
 
-Instead of relying only on predefined challenges, users can request AI-generated puzzles based on their selected category and difficulty.
+Users can select a category and difficulty level to generate new challenges.
 
-**Available categories:**
+**Puzzle categories:**
 - Logic
 - Cipher
 - Riddle
@@ -156,75 +116,68 @@ Instead of relying only on predefined challenges, users can request AI-generated
 - Medium
 - Hard
 
-**Generated puzzle content:**
+**Generated content:**
 - Puzzle question.
 - Four answer options.
 - Hint.
 - Correct answer.
 - Explanation.
 
-<p align="center">
-  <img src="docs/images/ai-puzzle-lab.png" alt="Gemini AI Puzzle Lab interface" width="100%" />
-</p>
+![AI Puzzle Lab](docs/images/ai-puzzle-lab.png)
 
 ---
 
-## 🤖 GEMINI AI INTEGRATION
+## 🤖 GOOGLE GEMINI AI INTEGRATION
 
-NEURO-QUEST-AI uses the Google Gemini API to generate interactive puzzle content.
+NEURO-QUEST-AI integrates Google's Gemini API for dynamic puzzle generation.
 
-**AI model:** `gemini-3.1-flash-lite`
+**Model:** `gemini-3.1-flash-lite`
 
 ### How it works
 
 1. The user selects a puzzle category.
-2. The user selects a difficulty level.
-3. The frontend sends a request to the backend API.
-4. The backend communicates with Gemini.
+2. The user chooses a difficulty level.
+3. The frontend sends a request to the backend.
+4. The backend communicates with the Gemini API.
 5. Gemini generates the puzzle content.
-6. The application displays the generated puzzle, options, hint, answer, and explanation.
+6. The application displays the question, options, hint, answer, and explanation.
 
-### AI architecture
+### AI workflow
 
 ```text
-             USER
-               |
-               v
-       REACT FRONTEND
-               |
-               v
-      CATEGORY & DIFFICULTY
-               |
-               v
-       /api/generate-puzzle
-               |
-               v
-        BACKEND API
-               |
-               v
-         GEMINI API
-      gemini-3.1-flash-lite
-               |
-               v
-       GENERATED PUZZLE
-               |
-               v
-       QUESTION + OPTIONS
-          + HINT
-          + ANSWER
-          + EXPLANATION
-               |
-               v
-       INTERACTIVE UI
+USER
+  |
+  v
+REACT FRONTEND
+  |
+  v
+CATEGORY AND DIFFICULTY
+  |
+  v
+/api/generate-puzzle
+  |
+  v
+BACKEND API
+  |
+  v
+GOOGLE GEMINI API
+  |
+  v
+GENERATED PUZZLE
+  |
+  v
+QUESTION + OPTIONS + HINT
+  + ANSWER + EXPLANATION
+  |
+  v
+INTERACTIVE USER INTERFACE
 ```
 
 ### API endpoint
 
-```http
-POST /api/generate-puzzle
-```
+`POST /api/generate-puzzle`
 
-The Gemini API key is configured as a sensitive environment variable on the deployment platform. It is not intended to be exposed in frontend code or committed to the repository.
+The Gemini API key is stored as a sensitive environment variable and handled through the backend.
 
 ---
 
@@ -232,15 +185,14 @@ The Gemini API key is configured as a sensitive environment variable on the depl
 
 | Feature | Description |
 |---|---|
-| Interactive Missions | Four core challenge experiences |
-| AI Puzzle Lab | Dynamically generated puzzles |
-| Gemini Integration | AI-powered puzzle generation |
+| Interactive Missions | Four core intelligence challenges |
+| Gemini AI Puzzle Lab | Dynamically generated puzzles |
 | Multiple Categories | Logic, Cipher, Riddle, Mixed |
 | Difficulty Selection | Easy, Medium, Hard |
-| Puzzle Hints | Hints for generated challenges |
+| Puzzle Hints | Hints for generated puzzles |
 | Answer Explanations | Explanations for generated answers |
-| Animations | Animated interface and transitions |
-| Responsive UI | Designed for different screen sizes |
+| Animations | Interface animations and transitions |
+| Responsive Design | Layout for different screen sizes |
 | Local Storage | Browser-based persistence where implemented |
 
 ---
@@ -248,7 +200,6 @@ The Gemini API key is configured as a sensitive environment variable on the depl
 ## 🛠️ TECHNOLOGY STACK
 
 ### Frontend
-
 - React 19
 - TypeScript 7
 - Vite 8
@@ -257,17 +208,15 @@ The Gemini API key is configured as a sensitive environment variable on the depl
 - Lucide React
 
 ### Backend and AI
-
 - Node.js API runtime
 - Google Gemini API
 - Gemini 3.1 Flash-Lite
 
-### Deployment and Tools
-
-- Vercel
+### Development and Deployment
 - Git
 - GitHub
 - npm
+- Vercel
 
 ---
 
@@ -296,7 +245,6 @@ NEURO-QUEST-AI/
 ├── index.html
 ├── package.json
 ├── tsconfig.json
-├── tsconfig.api.json
 ├── vite.config.ts
 ├── vercel.json
 └── README.md
@@ -306,15 +254,13 @@ NEURO-QUEST-AI/
 
 ## 🚀 RUN LOCALLY
 
-Follow these steps to run NEURO-QUEST-AI on your computer.
-
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/snehassneha4578-collab/NEURO-QUEST-AI.git
 ```
 
-### 2. Open the project
+### 2. Navigate to the project
 
 ```bash
 cd NEURO-QUEST-AI
@@ -334,49 +280,47 @@ Create a `.env.local` file in the project root:
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-Replace the placeholder with your own API key. Never commit this file or expose the key in frontend code.
+Replace the placeholder with your actual Gemini API key.
 
-### 5. Start the development environment
+Never expose your API key in frontend code or commit `.env.local` to GitHub.
+
+### 5. Start the frontend development server
 
 ```bash
 npm run dev
 ```
 
-Open the local URL displayed in the terminal.
-
-### 6. Run with Vercel locally
-
-For testing the backend API together with the frontend, use:
+### 6. Run the application with Vercel locally
 
 ```bash
 vercel dev
 ```
 
-Ensure the required environment variable is configured in your local environment.
+This allows you to test the frontend and backend API together.
 
 ---
 
 ## 🔐 SECURITY
 
-- Gemini API credentials are stored as environment variables.
-- API credentials should never be hardcoded in frontend code.
-- `.env.local` should not be committed to GitHub.
-- AI requests are handled through the backend API endpoint.
-- Production secrets are configured through Vercel environment settings.
+- API credentials are stored in environment variables.
+- Gemini API requests are handled through the backend.
+- API keys should never be exposed in frontend code.
+- Local environment files should not be committed.
+- Production secrets are configured through Vercel.
 
 ---
 
 ## 🧪 TESTING AND VERIFICATION
 
-The following checks have been completed during development:
+Development checks completed:
 
-| Check | Verified result |
+| Test | Result |
 |---|---|
 | ESLint | Passed — zero warnings and errors |
 | Production build | Passed |
-| TypeScript build checks | Passed |
+| TypeScript checks | Passed |
 | Git diff check | Passed |
-| Production AI API | HTTP 200 response |
+| Production AI API | HTTP 200 verified |
 | Generated puzzle structure | Validated |
 | Browser gameplay | Core missions and AI Puzzle Lab tested |
 
@@ -384,53 +328,42 @@ The following checks have been completed during development:
 
 ## ☁️ DEPLOYMENT
 
-The application is deployed using Vercel.
+The application is deployed on Vercel.
 
-<p align="center">
-  <a href="https://neuro-quest-ai.vercel.app/">
-    <img src="https://img.shields.io/badge/STATUS-LIVE-00C853?style=for-the-badge&logo=vercel&logoColor=white" alt="Live deployment" />
-  </a>
-</p>
+**Live application:** https://neuro-quest-ai.vercel.app/
 
-**Production URL:** https://neuro-quest-ai.vercel.app/
-
-**Repository:** https://github.com/snehassneha4578-collab/NEURO-QUEST-AI
+**Source code:** https://github.com/snehassneha4578-collab/NEURO-QUEST-AI
 
 ---
 
 ## 🔮 FUTURE ENHANCEMENTS
 
-Potential directions for future development:
-
 - Additional intelligence missions.
 - More AI-generated puzzle categories.
 - Expanded difficulty levels.
-- Enhanced player statistics and progress tracking.
+- Player statistics and progress tracking.
 - Leaderboards and achievements.
 - Additional sound and animation effects.
-- More personalized challenge experiences.
+- More personalized puzzle experiences.
 - Improved accessibility and mobile interactions.
 
 ---
 
-## 🎯 PROJECT OBJECTIVE
+## 🎯 PROJECT VISION
 
-NEURO-QUEST-AI brings together interactive gameplay, logical reasoning, and generative AI in one application.
+NEURO-QUEST-AI explores how interactive gameplay and generative AI can be combined to create engaging problem-solving experiences.
 
-It demonstrates how modern frontend technologies and AI integration can be combined to create an engaging, interactive puzzle platform.
+It brings together frontend development, backend API integration, and AI-powered content generation in one application.
 
 **Think beyond the obvious. Challenge your intelligence. Escape the ordinary.**
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,50:243B55,100:141E30&height=140&section=footer&animation=fadeIn" width="100%" alt="Animated footer" />
-</p>
-
-<p align="center">
-  <b>🧠 NEURO-QUEST-AI</b><br/>
-  <i>THE INTELLIGENCE ESCAPE</i><br/><br/>
-  <a href="https://neuro-quest-ai.vercel.app/">PLAY THE GAME</a>
-  &nbsp; • &nbsp;
-  <a href="https://github.com/snehassneha4578-collab/NEURO-QUEST-AI">VIEW SOURCE CODE</a>
+  <strong>🧠 NEURO-QUEST-AI</strong><br/>
+  THE INTELLIGENCE ESCAPE
+  <br/><br/>
+  <a href="https://neuro-quest-ai.vercel.app/">🚀 PLAY LIVE</a>
+  &nbsp; | &nbsp;
+  <a href="https://github.com/snehassneha4578-collab/NEURO-QUEST-AI">⭐ GITHUB</a>
 </p>
